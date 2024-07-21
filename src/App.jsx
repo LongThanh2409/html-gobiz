@@ -17,7 +17,7 @@ function App() {
       <div className="shadow-lg fixed top-0 z-[100] w-full bg-white">
         <Header />
       </div>
-      <div className="max-w-[1800px] w-full mx-auto pt-[100px] md:pt-[193px] lg:pt-[84px]">
+      <main className="max-w-[1800px] w-full mx-auto pt-[100px] md:pt-[193px] lg:pt-[84px]">
         <Banner />
         <div className="bg-white px-2 pt-10 lg:px-[100px] flex flex-col gap-4 lg:gap-10">
           <Category />
@@ -31,7 +31,7 @@ function App() {
           <TagSearch />
           <Footer />
         </div>
-      </div>
+      </main>
     </div>
   );
 }

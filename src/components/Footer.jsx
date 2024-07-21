@@ -13,7 +13,7 @@ export const Footer = () => {
   };
   return (
     <>
-      <div className="flex flex-col-reverse lg:flex-row items-start gap-10 lg:gap-[121px]">
+      <footer className="flex flex-col-reverse lg:flex-row items-start gap-10 lg:gap-[121px]">
         <div className="flex flex-col gap-3.5">
           <div className="flex items-center">
             <img
@@ -159,7 +159,7 @@ export const Footer = () => {
             </form>
           </div>
         </div>
-      </div>
+      </footer>
       <div className="h-[94px] leading-[94px] flex justify-between flex-wrap family-open-sans border-t border-[#E2E2E2]">
         <span className="text-[#747474]">
           © 2024 Organic. All rights reserved.

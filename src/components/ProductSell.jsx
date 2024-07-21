@@ -20,7 +20,7 @@ export const ProductSell = () => {
   const array = Array.from({ length: 12 });
 
   return (
-    <div className="flex flex-col gap-5 overflow-x-clip">
+    <section className="flex flex-col gap-5 overflow-x-clip">
       <div className="flex items-center justify-between">
         <h2 className="capitalize text-[#222222] text-xl md:text-2xl lg:text-[32px]">
           Best selling products
@@ -67,6 +67,11 @@ export const ProductSell = () => {
               spaceBetween: 20,
             },
             1024: {
+              slidesPerView: 5,
+              slidesPerGroup: 3,
+              spaceBetween: 30,
+            },
+            1800: {
               slidesPerView: 6,
               slidesPerGroup: 3,
               spaceBetween: 30,
@@ -75,11 +80,14 @@ export const ProductSell = () => {
         >
           {array.map((_, index) => (
             <SwiperSlide key={index} className="">
-              <div className="bg-white group border lg:border-none hover:!z-50 duration-200 lg:hover:absolute lg:hover:scale-[1.1] lg:hover:shadow-[0px_4px_25px_0px_rgba(0,0,0,0.15)] rounded-[20px]">
+              <div className="bg-white  group border lg:border-none hover:!z-50 duration-200 lg:hover:absolute lg:hover:scale-[1.1] lg:hover:shadow-[0px_4px_25px_0px_rgba(0,0,0,0.15)] rounded-[20px]">
                 <div className="flex flex-col gap-2.5 w-full lg:w-[233px] p-2.5 lg:group-hover:px-[30px] lg:group-hover:py-[26px]">
                   <div className="w-full flex justify-center">
                     <img
-                      src={`/image/product/sell/product-thumb-${index + 1}.png`}
+                      src={
+                        `/image/product/sell/product-thumb-${index + 1}.png` ??
+                        "/image/product/sell/product-thumb-1.png"
+                      }
                       alt=""
                       className="duration-300 cursor-pointer"
                     />
@@ -149,6 +157,6 @@ export const ProductSell = () => {
           ))}
         </Swiper>
       </div>
-    </div>
+    </section>
   );
 };

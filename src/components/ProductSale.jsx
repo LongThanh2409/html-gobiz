@@ -18,7 +18,7 @@ export const ProductSale = () => {
   };
   const array = Array.from({ length: 12 });
   return (
-    <div className="flex flex-col gap-5 overflow-x-clip">
+    <section className="flex flex-col gap-5 overflow-x-clip">
       <div className="flex items-center justify-between">
         <h2 className="capitalize text-[#222222] text-xl md:text-2xl lg:text-[32px]">
           products on Sale
@@ -65,6 +65,11 @@ export const ProductSale = () => {
               spaceBetween: 20,
             },
             1024: {
+              slidesPerView: 6,
+              slidesPerGroup: 3,
+              spaceBetween: 30,
+            },
+            1800: {
               slidesPerView: 6,
               slidesPerGroup: 3,
               spaceBetween: 30,
@@ -147,6 +152,6 @@ export const ProductSale = () => {
           ))}
         </Swiper>
       </div>
-    </div>
+    </section>
   );
 };

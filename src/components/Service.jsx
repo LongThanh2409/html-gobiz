@@ -23,7 +23,7 @@ export const Service = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5">
+    <section className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5">
       {array.map((item, index) => (
         <div
           key={index}
@@ -38,6 +38,6 @@ export const Service = () => {
           </span>
         </div>
       ))}
-    </div>
+    </section>
   );
 };

@@ -18,7 +18,7 @@ export const TagSearch = () => {
     "Sweet Vanilla essence Yogurt",
   ];
   return (
-    <div>
+    <section>
       <h2 className="text-[32px] text-[#222222] capitalize">
         People are also looking for
       </h2>
@@ -32,6 +32,6 @@ export const TagSearch = () => {
           </button>
         ))}
       </div>
-    </div>
+    </section>
   );
 };

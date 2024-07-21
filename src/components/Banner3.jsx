@@ -9,7 +9,7 @@ export const Banner3 = () => {
     alert("Đã submit với email: " + value);
   };
   return (
-    <div className="flex flex-col gap-4 lg:gap-10">
+    <section className="flex flex-col gap-4 lg:gap-10">
       <div className="w-full h-[325px] relative">
         <img
           src="/image/banner/banner-newsletter.jpeg"
@@ -127,6 +127,6 @@ export const Banner3 = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

@@ -7,7 +7,7 @@ export const Banner = () => {
       <img
         src="/image/banner/banner-1.jpg"
         className="w-full h-96 object-cover lg:h-auto"
-        alt=""
+        alt="banner"
       />
       <div className="absolute top-10 left-0 lg:top-[206px] lg:left-[271px] w-full lg:w-[566px] flex flex-col gap-5 lg:gap-10 pl-5 md:pl-0">
         <h1 className="text-[#111111] text-4xl lg:text-[69px] lg:leading-[82px]">
@@ -57,7 +57,7 @@ export const Banner = () => {
       </div>
       <div className="static lg:absolute w-full lg:w-auto bottom-0 flex flex-col lg:flex-row items-center left-1/2 lg:-translate-x-1/2 cursor-pointer">
         <div className="bg-[#F95F09] flex items-start w-full lg:w-[427px] p-5 gap-7 hover:bg-opacity-95 active:bg-opacity-90">
-          <img src="/image/icon/fresh.svg" alt="" />
+          <img src="/image/icon/fresh.svg" alt="icon" />
           <div className="text-white capitalize">
             <span className="text-2xl font-semibold">Fresh from farm</span>
             <p className="text-base m-0">
@@ -66,7 +66,7 @@ export const Banner = () => {
           </div>
         </div>
         <div className="bg-[#364127] flex items-start w-full lg:w-[427px] p-5 gap-7 hover:bg-opacity-[99] active:bg-opacity-95">
-          <img src="/image/icon/konoha-white.svg" alt="" />
+          <img src="/image/icon/konoha-white.svg" alt="icon" />
           <div className="text-white capitalize">
             <span className="text-2xl font-semibold">100% Organic</span>
             <p className="text-base m-0">
@@ -75,7 +75,7 @@ export const Banner = () => {
           </div>
         </div>
         <div className="bg-[#6BB252] flex items-start w-full lg:w-[427px] p-5 gap-7 hover:bg-opacity-[98] active:bg-opacity-[96]">
-          <img src="/image/icon/cart.svg" alt="" />
+          <img src="/image/icon/cart.svg" alt="icon" />
           <div className="text-white capitalize">
             <span className="text-2xl font-semibold">Free delivery</span>
             <p className="text-base m-0">

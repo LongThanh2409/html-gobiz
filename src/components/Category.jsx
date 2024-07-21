@@ -75,7 +75,7 @@ export const Category = () => {
   const [swiperRef, setSwiperRef] = useState(null);
   const [active, setActive] = useState(0);
   return (
-    <div className="flex flex-col gap-10">
+    <section className="flex flex-col gap-10">
       <div className="flex items-center justify-between">
         <h2 className="capitalize text-[#222222] text-xl md:text-2xl lg:text-[32px]">
           Popular categories
@@ -137,7 +137,7 @@ export const Category = () => {
                 <div className="rounded-full overflow-hidden border-2 border-transparent hover:border-green-600 duration-300">
                   <img
                     src={item.image}
-                    alt={item.name}
+                    alt={item?.name}
                     className="object-cover hover:scale-110 duration-300 cursor-pointer w-full"
                   />
                 </div>
@@ -149,6 +149,6 @@ export const Category = () => {
           ))}
         </Swiper>
       </div>
-    </div>
+    </section>
   );
 };

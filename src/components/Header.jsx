@@ -34,7 +34,7 @@ export const Header = () => {
     setOpen(false);
   };
   return (
-    <head className="bg-white max-w-[1800px] mx-auto w-full flex flex-col lg:flex-row h-auto lg:h-[84px] lg:items-center justify-between px-2 md:px-5 py-2 md:py-0 ">
+    <header className="bg-white max-w-[1800px] mx-auto w-full flex flex-col lg:flex-row h-auto lg:h-[84px] lg:items-center justify-between px-2 md:px-5 py-2 md:py-0 ">
       <div className="flex items-center justify-between w-full lg:w-auto gap-1">
         <img src="/image/icon/konoha.svg" alt="" />
         <span className="font-medium text-[40px] text-black khand-medium">
@@ -138,6 +138,6 @@ export const Header = () => {
       >
         <Menu menu={menu} />
       </Drawer>
-    </head>
+    </header>
   );
 };

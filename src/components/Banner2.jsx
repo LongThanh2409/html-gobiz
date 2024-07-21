@@ -1,6 +1,6 @@
 export const Banner2 = () => {
   return (
-    <div className="py-4 md:py-10 flex flex-col md:flex-row justify-center gap-3 lg:gap-[30px]">
+    <section className="py-4 md:py-10 flex flex-col md:flex-row justify-center gap-3 lg:gap-[30px]">
       <div className="w-full md:w-1/2 lg:w-[900px] h-[265px] md:h-[560px] overflow-hidden relative flex items-start">
         <img
           src="/image/banner/banner-1.jfif"
@@ -51,6 +51,6 @@ export const Banner2 = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

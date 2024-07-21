@@ -22,7 +22,7 @@ export const Articles = () => {
     },
   ];
   return (
-    <div>
+    <section>
       <div className="flex items-center justify-between">
         <h2 className="capitalize text-[#222222] text-xl md:text-2xl lg:text-[32px]">
           our latest articles
@@ -72,6 +72,6 @@ export const Articles = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
