@@ -73,7 +73,7 @@ export const Category = () => {
   ];
 
   const [swiperRef, setSwiperRef] = useState(null);
-
+  const [active, setActive] = useState(0);
   return (
     <div className="flex flex-col gap-10">
       <div className="flex items-center justify-between">
@@ -88,13 +88,17 @@ export const Category = () => {
           <div className="flex justify-center gap-3">
             <span
               onClick={() => swiperRef?.slidePrev()}
-              className="w-10 h-10 flex items-center justify-center font-medium bg-[#F1F1F1] rounded-[10px] group hover:bg-[#6BB252] active:bg-[#364127] duration-300 cursor-pointer"
+              className={`${
+                active > 0 ? "bg-[#6BB252] text-white" : "bg-[#F1F1F1]"
+              } w-10 h-10 flex items-center justify-center font-medium rounded-[10px] group hover:bg-[#6BB252] active:bg-[#364127] duration-300 cursor-pointer`}
             >
               <i className="fa-solid fa-chevron-left group-hover:text-white"></i>
             </span>
             <span
               onClick={() => swiperRef?.slideNext()}
-              className="w-10 h-10 flex items-center justify-center font-medium bg-[#F1F1F1] rounded-[10px] group hover:bg-[#6BB252] active:bg-[#364127] duration-300 cursor-pointer"
+              className={` ${
+                !swiperRef?.isEnd ? "bg-[#6BB252] text-white" : "bg-[#F1F1F1]"
+              } w-10 h-10 flex items-center justify-center font-medium rounded-[10px] group active:bg-[#364127] duration-300 cursor-pointer`}
             >
               <i className="fa-solid fa-chevron-right group-hover:text-white"></i>
             </span>
@@ -107,7 +111,7 @@ export const Category = () => {
           spaceBetween={50}
           slidesPerView={8}
           slidesPerGroup={3}
-          onSlideChange={() => console.log("slide change")}
+          onSlideChange={(swiper) => setActive(swiper.activeIndex)}
           onSwiper={(swiper) => setSwiperRef(swiper)}
           breakpoints={{
             320: {

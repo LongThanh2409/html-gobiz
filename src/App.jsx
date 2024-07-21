@@ -19,7 +19,7 @@ function App() {
       </div>
       <div className="max-w-[1800px] w-full mx-auto pt-[100px] md:pt-[193px] lg:pt-[84px]">
         <Banner />
-        <div className="bg-white px-2 lg:px-[100px] pt-10 flex flex-col gap-4 lg:gap-10">
+        <div className="bg-white px-2 pt-10 lg:px-[100px] flex flex-col gap-4 lg:gap-10">
           <Category />
           <ListProducts />
           <Banner2 />

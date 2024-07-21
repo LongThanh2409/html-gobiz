@@ -9,7 +9,7 @@ export const Banner = () => {
         className="w-full h-96 object-cover lg:h-auto"
         alt=""
       />
-      <div className="absolute top-10 left-0 lg:top-[206px] lg:left-[271px] w-full lg:w-[566px] flex flex-col gap-5 lg:gap-10 ml-5 md:ml-0">
+      <div className="absolute top-10 left-0 lg:top-[206px] lg:left-[271px] w-full lg:w-[566px] flex flex-col gap-5 lg:gap-10 pl-5 md:pl-0">
         <h1 className="text-[#111111] text-4xl lg:text-[69px] lg:leading-[82px]">
           <span className="text-[#6BB252] font-bold">Organic</span> Foods <br />
           <span className="whitespace-nowrap">

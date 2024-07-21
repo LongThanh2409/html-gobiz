@@ -34,7 +34,7 @@ export const Header = () => {
     setOpen(false);
   };
   return (
-    <head className="bg-white max-w-[1800px] mx-auto w-full flex flex-col lg:flex-row h-auto lg:h-[84px] lg:items-center justify-between px-2 md:px-5 py-1 md:py-0 ">
+    <head className="bg-white max-w-[1800px] mx-auto w-full flex flex-col lg:flex-row h-auto lg:h-[84px] lg:items-center justify-between px-2 md:px-5 py-2 md:py-0 ">
       <div className="flex items-center justify-between w-full lg:w-auto gap-1">
         <img src="/image/icon/konoha.svg" alt="" />
         <span className="font-medium text-[40px] text-black khand-medium">
@@ -48,7 +48,7 @@ export const Header = () => {
         </span>
       </div>
       <div className="w-full lg:w-auto flex items-center justify-between gap-1 md:gap-4">
-        <div className="flex items-center w-full lg:w-auto">
+        <div className="flex items-center w-2/3 md:w-full lg:w-auto">
           <div className="flex items-center w-full lg:w-auto rounded-s-[10px] h-8 md:h-[47px] px-3.5 border-y border-l border-[#D8D8D8] bg-[#F5F5F5]">
             <input
               type="text"
@@ -61,7 +61,7 @@ export const Header = () => {
             <i className="fa-solid fa-magnifying-glass md:hidden"></i>
           </div>
         </div>
-        <div className="lg:hidden flex items-center justify-between gap-1 md:gap-4">
+        <div className="lg:hidden flex items-center justify-between gap-2.5 md:gap-4">
           <span className="text-lg">
             <i className="fa-regular fa-circle-user hover:font-semibold cursor-pointer"></i>
           </span>
