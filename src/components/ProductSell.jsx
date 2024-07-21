@@ -38,7 +38,7 @@ export const ProductSell = () => {
             <span
               onClick={() => swiperRef?.slideNext()}
               className={` ${
-                !swiperRef.isEnd ? "bg-[#6BB252] text-white" : "bg-[#F1F1F1]"
+                !swiperRef?.isEnd ? "bg-[#6BB252] text-white" : "bg-[#F1F1F1]"
               } w-10 h-10 flex items-center justify-center font-medium rounded-[10px] group active:bg-[#364127] duration-300 cursor-pointer`}
             >
               <i className="fa-solid fa-chevron-right group-hover:text-white"></i>
