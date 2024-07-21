@@ -65,7 +65,7 @@ export const ProductSale = () => {
               spaceBetween: 20,
             },
             1024: {
-              slidesPerView: 6,
+              slidesPerView: 5,
               slidesPerGroup: 3,
               spaceBetween: 30,
             },
