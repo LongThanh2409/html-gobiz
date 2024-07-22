@@ -27,7 +27,7 @@ export const ListProducts = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 md:gap-3.5 lg:gap-[30px]">
         {Array.from({ length: 18 }).map((_, index) => (
           <div key={index} className="border lg:border-none">
-            <div className="bg-white cursor-pointer z-50 group lg:hover:absolute duration-200 hover:w-[248px] lg:hover:scale-[1.1] lg:hover:shadow-[0px_4px_25px_0px_rgba(0,0,0,0.15)] rounded-[20px]">
+            <div className="bg-white cursor-pointer z-50 group lg:hover:absolute duration-200 lg:hover:w-[248px] lg:hover:scale-[1.1] lg:hover:shadow-[0px_4px_25px_0px_rgba(0,0,0,0.15)] rounded-[20px]">
               <div className="flex flex-col gap-2.5 p-2.5 lg:group-hover:px-[30px] lg:group-hover:py-[26px]">
                 <div className="min-h-[210px] flex justify-center ">
                   <img
