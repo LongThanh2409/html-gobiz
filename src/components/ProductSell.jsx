@@ -80,7 +80,10 @@ export const ProductSell = () => {
         >
           {array.map((_, index) => (
             <SwiperSlide key={index} className="">
-              <div className="bg-white  group border lg:border-none hover:!z-50 duration-200 lg:hover:absolute lg:hover:scale-[1.1] lg:hover:shadow-[0px_4px_25px_0px_rgba(0,0,0,0.15)] rounded-[20px]">
+              <a
+                href="#"
+                className="bg-white  group border lg:border-none hover:!z-50 duration-200 lg:hover:absolute lg:hover:scale-[1.1] lg:hover:shadow-[0px_4px_25px_0px_rgba(0,0,0,0.15)] rounded-[20px]"
+              >
                 <div className="flex flex-col gap-2.5 w-full lg:w-[233px] p-2.5 lg:group-hover:px-[30px] lg:group-hover:py-[26px]">
                   <div className="w-full flex justify-center">
                     <img
@@ -121,7 +124,10 @@ export const ProductSell = () => {
                     <div className="lg:hidden lg:group-hover:block">
                       <div className="flex items-center justify-center gap-[3px] mt-2.5">
                         <button
-                          onClick={handleMinus}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            handleMinus();
+                          }}
                           className="border border-[#E2E2E2] w-[26px] h-[26px] rounded-md hover:bg-[#F1F1F1] duration-100 active:bg-[#E2E2E2]"
                         >
                           -
@@ -130,7 +136,10 @@ export const ProductSell = () => {
                           {value}
                         </span>
                         <button
-                          onClick={handlePlus}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            handlePlus();
+                          }}
                           className="border border-[#E2E2E2] w-[26px] h-[26px] rounded-md hover:bg-[#F1F1F1] duration-100 active:bg-[#E2E2E2]"
                         >
                           +
@@ -152,7 +161,7 @@ export const ProductSell = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </SwiperSlide>
           ))}
         </Swiper>

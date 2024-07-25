@@ -48,7 +48,7 @@ export const Header = () => {
         </span>
       </div>
       <div className="w-full lg:w-auto flex items-center justify-between gap-1 md:gap-4">
-        <div className="flex items-center w-2/3 md:w-full lg:w-auto">
+        <form className="flex items-center w-2/3 md:w-full lg:w-auto">
           <div className="flex items-center w-full lg:w-auto rounded-s-[10px] h-8 md:h-[47px] px-3.5 border-y border-l border-[#D8D8D8] bg-[#F5F5F5]">
             <input
               type="text"
@@ -60,7 +60,7 @@ export const Header = () => {
             <button className="hidden md:block">SEARCH</button>
             <i className="fa-solid fa-magnifying-glass md:hidden"></i>
           </div>
-        </div>
+        </form>
         <div className="lg:hidden flex items-center justify-between gap-2.5 md:gap-4">
           <span className="text-lg">
             <i className="fa-regular fa-circle-user hover:font-semibold cursor-pointer"></i>

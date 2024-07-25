@@ -133,7 +133,7 @@ export const Category = () => {
         >
           {categories.map((item, index) => (
             <SwiperSlide key={index} className="">
-              <div className="flex flex-col items-center gap-1 md:gap-5">
+              <a href="#" className="flex flex-col items-center gap-1 md:gap-5">
                 <div className="rounded-full overflow-hidden border-2 border-transparent hover:border-green-600 duration-300">
                   <img
                     src={item.image}
@@ -144,7 +144,7 @@ export const Category = () => {
                 <span className="text-[#222222] text-xs md:text-base whitespace-nowrap">
                   {item.name}
                 </span>
-              </div>
+              </a>
             </SwiperSlide>
           ))}
         </Swiper>

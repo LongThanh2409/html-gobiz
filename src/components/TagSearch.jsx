@@ -24,12 +24,13 @@ export const TagSearch = () => {
       </h2>
       <div className="flex flex-wrap gap-[15px] mt-5">
         {arrayTag.map((tag, index) => (
-          <button
+          <a
+            href="#"
             key={index}
             className="text-[#555555] text-base leading-5 bg-[#DDF6D5] active:bg-green-100 duration-300 hover:bg-green-400 rounded-[10px] family-open-sans px-3 py-2.5 capitalize"
           >
             {tag}
-          </button>
+          </a>
         ))}
       </div>
     </section>

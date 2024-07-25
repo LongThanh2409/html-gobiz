@@ -113,7 +113,7 @@ export const Menu = ({ menu }) => {
             <div className="flex items-center gap-2.5 h-[43px] menu-hover pl-[10px]">
               {icon?.image && (
                 <img
-                  src={`public/image/menu/${icon?.image}`}
+                  src={`/image/menu/${icon?.image}`}
                   alt="icon"
                   className="w-6 h-6"
                 />

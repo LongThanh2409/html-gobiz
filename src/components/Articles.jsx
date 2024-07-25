@@ -41,7 +41,7 @@ export const Articles = () => {
           >
             <img
               src={item.image}
-              alt=""
+              alt={item?.title}
               className="group-hover:scale-110 duration-300 cursor-pointer object-cover md:w-1/2 lg:w-auto"
             />
             <div className="p-4 md:p-[30px] flex flex-col gap-2.5">
